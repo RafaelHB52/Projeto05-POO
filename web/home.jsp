@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
     <head>
         <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
         <title>Web Quiz</title>
@@ -15,9 +16,9 @@
                 <form method="post" action="logar.jsp">
                     <div class="form-group">
                         <center><label>Login:</label>
-                            <input type="text" name="username" class="form-control"><br>
+                            <input type="text" name="username" id="username" class="form-control" required><br>
                         </center>
-                        <button class="btn btn-outline-primary" type="submit" name="entrar">Entrar</button>
+                        <input type="submit" class="btn btn-outline-primary" name="entrar" value="Entrar">
                     </div>
                 </form>
             </div>
