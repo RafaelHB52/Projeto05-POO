@@ -8,20 +8,20 @@
     </head>
     <body>
     <%@include file="WEB-INF/jspf/navbar.jspf"%>
-    
-    <center>Para logar-se no sistema informe o seu login:</center><br/>
-    <form method="post" action="logar.jsp">
-        <table width="180" border="0" align="center" cellpadding="0" cellspacing="1">
-            <tr>
-            <td width="55">Login:</td>
-            <td width="122"><input type="text" name="username"></td>
-            </tr><tr>
-            <td colspan="2"><div align="center">
-            <input type="submit" name="Submit" value="Logar">
-            </div></td>
-            </tr>
-        </table>
-    </form>
+        <div class="card text-center">
+            <div class="card-header">
+              Para logar-se no sistema informe o seu login:
+            </div>
+            <div class="card-body">
+                <form method="post" action="logar.jsp">
+                    <div class="form-group">
+                        <center><label>Login:</label><br/>
+                            <input type="text" name="username" class="form-control"><br/>
+                        </center>
+                        <button class="btn btn-outline-primary" type="submit" name="entrar">Entrar</button>
+                    </div>
+                </form>
+            </div>
     
     <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>
