@@ -8,16 +8,17 @@ public class Quiz {
     public static ArrayList<Question> getTest(){
         if(test == null){
             test = new ArrayList<>();
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
-            test.add(new Question("1+1", "2", new String[]{"1", "2", "3"}));
+            test.add(new Question("1° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("2° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("3° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("4° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("5° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("6° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("7° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("8° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("9° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            test.add(new Question("10° pergunta", "resposta", new String[]{"A", "B", "C"}));
+            
         }
         return test; 
     }

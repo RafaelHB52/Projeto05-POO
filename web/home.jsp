@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
         <title>Web Quiz</title>
     </head>
@@ -15,8 +14,8 @@
             <div class="card-body">
                 <form method="post" action="logar.jsp">
                     <div class="form-group">
-                        <center><label>Login:</label><br/>
-                            <input type="text" name="username" class="form-control"><br/>
+                        <center><label>Login:</label>
+                            <input type="text" name="username" class="form-control"><br>
                         </center>
                         <button class="btn btn-outline-primary" type="submit" name="entrar">Entrar</button>
                     </div>
