@@ -41,7 +41,7 @@
         
         <%if (tested) { %>
             <hr>
-            <h3>Sua porcentagem de acerto foi de: <%= grade%> %</h3>
+            <h3>Sua porcentagem de acerto foi de: <%= grade %> %</h3>
             <hr>
         <% } %>
         

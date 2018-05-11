@@ -12,7 +12,8 @@
     <center>
         <h2>QUIZ</h2>
         <form action="logado.jsp">
-            <%for(int i = 0; i < Quiz.getTest().size(); i++){%>
+                        
+            <% for(int i = 0; i < Quiz.getTest().size(); i++){%>
             <% Question q = Quiz.getTest().get(i);%>
             <h3><%= (i+1) + ") " + q.getQuestion() %></h3>
                 <%for(int i2 = 0; i2 < q.getAlternatives().length; i2++){%>

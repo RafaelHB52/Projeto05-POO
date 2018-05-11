@@ -1,5 +1,7 @@
 package br.com.fatecpg.webquiz;
 
+import java.util.ArrayList;
+
 public class Question {
     private String question;
     private String answer;
@@ -33,5 +35,9 @@ public class Question {
 
     public void setAlternatives(String[] alternatives) {
         this.alternatives = alternatives;
+    }
+
+    ArrayList<Question> intValue() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

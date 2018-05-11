@@ -7,7 +7,7 @@ public class Quiz {
     
     public static ArrayList<Question> getTest(){
         if(test == null){
-            test = new ArrayList<>();
+            test = new ArrayList<>();            
             test.add(new Question("1° pergunta", "resposta", new String[]{"A", "B", "C"}));
             test.add(new Question("2° pergunta", "resposta", new String[]{"A", "B", "C"}));
             test.add(new Question("3° pergunta", "resposta", new String[]{"A", "B", "C"}));
