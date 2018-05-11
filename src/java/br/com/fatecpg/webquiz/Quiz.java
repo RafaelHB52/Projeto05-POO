@@ -19,11 +19,7 @@ public class Quiz {
             test.add(new Question("Quantas estrelas formam a famosa constelação Cruzeiro do Sul?", "54", new String[]{"54", "62", "41"}));
             test.add(new Question("Quantas planetas têm no Sistema Solar atualmente?", "8", new String[]{"8", "9", "7"}));
             test.add(new Question("Em qual planeta está o maior vulcão do universo conhecido pelo homem? Ele tem o nome de 'Monte Olimpo'", "Marte", new String[]{"Vênus", "Marte", "Terra"}));
-            test.add(new Question("Quantos anos Netuno leva para completar uma volta em torno do Sol?", "163", new String[]{"177", "163", "220"}));
-            
-            // Embaralhando o quiz
-            Collections.shuffle( test );
-            
+            test.add(new Question("Quantos anos Netuno leva para completar uma volta em torno do Sol?", "163", new String[]{"177", "163", "220"}));       
         }
         return test;
     }

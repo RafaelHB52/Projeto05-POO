@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="br.com.fatecpg.webquiz.Quiz"%>
 <%@page import="br.com.fatecpg.webquiz.Question"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,10 +12,21 @@
         <%@include file="WEB-INF/jspf/navbar.jspf"%>
     <center>
         <h2 class="titulo">QUIZ</h2>
-        <form action="logado.jsp">
-                        
+        <form method="post" action="logado.jsp"> 
+            <%
+                ArrayList<Integer> random = new ArrayList<>();
+                int contador = 0;
+                while(contador < Quiz.getTest().size()){
+                    int aleatorio = (int)(Math.random() * Quiz.getTest().size());
+                    if(!random.contains(aleatorio)){
+                        random.add(aleatorio);
+                        contador++;
+                    }
+                }
+            %>
+            
             <% for(int i = 0; i < Quiz.getTest().size(); i++){%>
-            <% Question q = Quiz.getTest().get(i);%>
+            <% Question q = Quiz.getTest().get(random.get(i));%>
             <h3 class="corpo"><%= (i+1) + ") " + q.getQuestion() %></h3>
                 <h3 class="corpo"><%for(int i2 = 0; i2 < q.getAlternatives().length; i2++){%>
                      <input type="radio" name="<%= q.getQuestion() %>"
