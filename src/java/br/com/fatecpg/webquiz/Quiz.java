@@ -1,6 +1,8 @@
 package br.com.fatecpg.webquiz;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class Quiz {
     private static ArrayList<Question> test;
@@ -19,7 +21,10 @@ public class Quiz {
             test.add(new Question("9° pergunta", "resposta", new String[]{"A", "B", "C"}));
             test.add(new Question("10° pergunta", "resposta", new String[]{"A", "B", "C"}));
             
+            // Embaralhando o quiz
+            Collections.shuffle( test );
+            
         }
-        return test; 
+        return test;
     }
 }
