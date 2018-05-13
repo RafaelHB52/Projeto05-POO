@@ -33,7 +33,6 @@
                 </form>                    
             </div>
         </div><hr/>
-    
         <p class="titulo" align="center">TABELAS</p>
         
     <%@include file="WEB-INF/jspf/rodape.jspf"%>

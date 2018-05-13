@@ -15,10 +15,7 @@
         <%}else{
             session.putValue("sessionName", login);
             session.setAttribute("nome", login);
-        %>
-        
-}
-    }
+        }%>
 
 <html>
     <head>

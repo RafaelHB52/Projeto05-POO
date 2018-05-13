@@ -58,5 +58,4 @@ public class Quiz {
     public String getRealizado(){
         return realizado;
     }
-    
 }

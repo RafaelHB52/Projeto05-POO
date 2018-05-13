@@ -9,8 +9,7 @@
         <title>Planetary Quiz</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/navbar.jspf"%>
-        
+        <%@include file="WEB-INF/jspf/navbar.jspf"%>     
     <div class="form-quiz">
         <form method="post" action="logado.jsp"> 
             <h2 class="titulo">Quiz</h2><br><br>
@@ -41,7 +40,6 @@
             <center><input class="btn btn-dark" type="submit" name="tested" value="Enviar" /></center><hr/>
         </form>
             </div>
-    </center>
         <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>
 </html>
