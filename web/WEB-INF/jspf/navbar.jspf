@@ -1,0 +1,12 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<nav class="navbar navbar-dark" style="background-color: #182D50">
+    <h3 class="navbar-brand titulo">Planetary Quiz</h3>
+    
+    <%if(session.getAttribute("nome") != null){%>
+        <form method="post">
+            <label>Olá, <%=session.getAttribute("nome")%></label>
+            <input type="submit" class="btn btn-outline-light" name="logout" value="Sair"/>
+        </form>
+    <%}%>
+</nav>

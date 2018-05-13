@@ -1,0 +1,61 @@
+body{
+    line-height: 1.8;
+    background-color: #2d2d30;
+}
+
+hr{
+    border-color: white;
+}
+
+.fonte{
+    font-family: 'Questrial', sans-serif;
+    font-size: 110%;
+    text-align: center;
+    color: white;
+}
+
+.titulo{
+    font-family: 'Questrial', sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.navbar{
+    font-family: 'Questrial', sans-serif;
+    font-size: 100%;
+}
+
+.footer-css{
+    background-color: #4d004d;
+    margin: 0px;
+    padding: 1.25em;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#container {
+  display: inline-block;
+  position: relative;
+}
+
+#container figcaption {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.form-quiz{
+    margin: 10% 30% 15% 30%;
+    border-radius: 30px;
+    background-color: #182D50;
+    padding: 30px 10px;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
