@@ -14,7 +14,7 @@
         </nav>  
         
         <div class="form-quiz">
-            <form method="post" action="logado.jsp"> 
+            <form action="logado.jsp"> 
                 <h2 class="titulo">Quiz</h2><br><br>
                     <%
                     ArrayList<Integer> random = new ArrayList<>();

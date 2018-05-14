@@ -52,7 +52,7 @@
         </div><hr/>
         
         <%if(tested){%>
-            <h3 class="fonte">Sua pontuação no último teste foi de: <%= resultado %></h3>
+            <h3 class="fonte">Sua pontuação no último teste foi de: <%= resultado %> %</h3>
             <hr/>
         <% } %>
     
