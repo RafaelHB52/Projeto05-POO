@@ -1,5 +1,5 @@
 <%@page import="br.com.fatecpg.webquiz.Bd"%>
-<%@page import="br.com.fatecpg.webquiz.Usuario"%>
+<%@page import="br.com.fatecpg.webquiz.Usuarios"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>

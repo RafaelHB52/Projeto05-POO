@@ -1,5 +1,16 @@
+<%@page import="br.com.fatecpg.webquiz.Bd"%>
+<%@page import="br.com.fatecpg.webquiz.Usuarios"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+    <%-- <%
+        Double resultado = 0.0;
+        
+        Usuarios newPonto = new Usuarios();
+        newPonto.setPonto(resultado);
+        Bd.getPonto().add(newPonto);
+        
+    %> --%>
 
 <html>
     <head>
@@ -27,6 +38,13 @@
             </div>
         </div><hr/>
         <p class="titulo" align="center">TABELAS</p>
+        
+        <%-- <% for (int i = 0; i < Bd.getUsuarios().size(); i++){ %>
+        <tr>
+            <td><%= Bd.getUsuarios().get(i).getNome() %></td>
+            <td><%= Bd.getPonto().get(i).getPonto() %></td>
+        </tr>
+        <%}%> --%>
         
     <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>

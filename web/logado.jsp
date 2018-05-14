@@ -1,7 +1,7 @@
 <%@page import="br.com.fatecpg.webquiz.Question"%>
 <%@page import="br.com.fatecpg.webquiz.Quiz"%>
 <%@page import="br.com.fatecpg.webquiz.Bd"%>
-<%@page import="br.com.fatecpg.webquiz.Usuario"%>
+<%@page import="br.com.fatecpg.webquiz.Usuarios"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -22,6 +22,10 @@
             }
         }
         resultado = 100.0 * ((double)(contador) / (double)(Quiz.getTest().size()));
+        
+        Usuarios newPonto = new Usuarios();
+        newPonto.setPonto(resultado);
+        Bd.getPonto().add(newPonto);
     }
 %>
 
@@ -57,8 +61,13 @@
         <% } %>
     
         <p class="titulo" align="center">TABELAS</p>
-
-        </center>
+        
+        <% for (int i = 0; i < Bd.getUsuarios().size(); i++){ %>
+        <tr>
+            <td><%= Bd.getUsuarios().get(i).getNome() %></td>
+            <td><%= Bd.getPonto().get(i).getPonto() %></td>
+        </tr>    
+        <%}%>
     
         <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>
