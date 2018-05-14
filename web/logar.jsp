@@ -4,18 +4,9 @@
 
 <!DOCTYPE html>
 <%
-    if(request.getParameter("entrar") != null){
-        String login = request.getParameter("login");
-        Usuario u = new Usuario(login, 0);
-        if(Bd.addUsuario(u)){
-%><script>
-    window.onload = function () {
-                $("#success").modal("show");
-            }</script>
-        <%}else{
-            session.putValue("sessionName", login);
-            session.setAttribute("nome", login);
-        }%>
+    String login = request.getParameter("login");
+    session.setAttribute("loginUsuario", login);
+%>
 
 <html>
     <head>

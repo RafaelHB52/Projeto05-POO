@@ -1,14 +1,9 @@
 package br.com.fatecpg.webquiz;
-
 import java.util.ArrayList;
 
 public class Quiz {
-    
-    private int qtd;
-    private double soma;
-    private String realizado;
-    
     private static ArrayList<Question> test;
+    
     public static ArrayList<Question> getTest(){
         if(test == null){
             test = new ArrayList<>();            
@@ -43,19 +38,5 @@ public class Quiz {
             test.add(q10);
         }
         return test;
-    }
-
-    public Quiz(int qtd, double soma, String realizado) {
-        this.qtd = qtd;
-        this.soma = soma;
-        this.realizado = realizado;
-    }
-    
-    public double getMedia(){
-        return (soma / (double) qtd) *10;
-    }
-    
-    public String getRealizado(){
-        return realizado;
     }
 }
