@@ -12,4 +12,10 @@ public class Bd {
     public static ArrayList<Usuarios> getPonto() {
         return ponto;
     }
+    
+    private static ArrayList<Usuarios> total = new ArrayList<>();
+    public static ArrayList<Usuarios> getTotal() {
+        return total;
+    }
+    
 }

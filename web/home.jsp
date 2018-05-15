@@ -38,6 +38,7 @@
             </div>
         </div><hr/>
         <p class="titulo" align="center">TABELAS</p>
+        <hr>
         
         <%-- <% for (int i = 0; i < Bd.getUsuarios().size(); i++){ %>
         <tr>
@@ -45,7 +46,60 @@
             <td><%= Bd.getPonto().get(i).getPonto() %></td>
         </tr>
         <%}%> --%>
-        
+        <center>
+        <div><button style="background-color: #182D50" class="btn btn-primary btn-lg btn-block bttbody" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Mostrar Ranking Top10</button></div>
+        <div class="collapse" id="collapseExample">
+            <div class="card-body btn-dark">
+                <table border="2">            
+                    <tr>
+                        <td><h3>Posição: </h3></td>
+                        <td><h3>Nome: </h3></td>
+                        <td><h3>Pontuação: </h3></td>
+                    </tr>
+
+                    <% for (int i = 0; i < 10; i ++) { %>
+
+                        <% if (i < 5) { %>
+                        <tr>
+                            <td><h<%=(i+1)%>> <%= (i+1) %>°</h<%=(i+1)%>></td>
+                            <td><h<%=(i+1)%>> NOME </h<%=(i+1)%>>
+                            <td><h<%=(i+1)%>> Pontuação </h<%=(i+1)%>>                        
+
+                        <% } else { %>
+
+                            <td><h6> <%= (i+1) %>° </h6>
+                            <td><h6> NOME </h6>
+                            <td><h6> Pontuação </h6>
+
+                        <% } %>
+                        </tr>
+                    <% } %>
+                
+                </table>
+            </div>
+        </div>        
+        <hr>
+        <div><button style="background-color: #182D50" class="btn btn-primary btn-lg btn-block bttbody" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Mostrar os Últimos 10 Testes Realizados</button></div>
+        <div class="collapse" id="collapseExample2">
+            <div class="card-body btn-dark">
+                <table border="2">            
+                    <tr>
+                        <td><h3>Nome: </h3></td>
+                        <td><h3>Pontuação: </h3></td>
+                    </tr>
+
+                    <% for (int i = 0; i < 10; i ++) { %>                       
+                        <tr>
+                            <td><h5>NOME</h5></td>
+                            <td><h5>Pontuação</h5></td>
+                        </tr>
+                    <% } %>
+                
+                </table>
+            </div>
+        </div>
+        <hr>
+                        
     <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>
 </html>

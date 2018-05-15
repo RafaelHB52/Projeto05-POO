@@ -23,9 +23,9 @@
         }
         resultado = 100.0 * ((double)(contador) / (double)(Quiz.getTest().size()));
         
-        Usuarios newPonto = new Usuarios();
+        /* Usuarios newPonto = new Usuarios();
         newPonto.setPonto(resultado);
-        Bd.getPonto().add(newPonto);
+        Bd.getPonto().add(newPonto); */
     }
 %>
 
@@ -59,15 +59,15 @@
             <h3 class="fonte">Sua pontuação no último teste foi de: <%= resultado %> %</h3>
             <hr/>
         <% } %>
-    
+        
         <p class="titulo" align="center">TABELAS</p>
         
-        <% for (int i = 0; i < Bd.getUsuarios().size(); i++){ %>
+        <%-- <% for (int i = 0; i < Bd.getUsuarios().size(); i++){ %>
         <tr>
             <td><%= Bd.getUsuarios().get(i).getNome() %></td>
             <td><%= Bd.getPonto().get(i).getPonto() %></td>
         </tr>    
-        <%}%>
+        <%}%> --%>
     
         <%@include file="WEB-INF/jspf/rodape.jspf"%>
     </body>
